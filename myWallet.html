@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Digital Wallet</title>
+  <!-- linked script.js/style.css/bulma files -->
+  <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <script src="script.js" type="text/javascript" defer></script>
+</head>
+
+
+<body>
+  <!-- **** Wallet Header -->
+  <div id="wallet" class="hero is-halfheight">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title is-size-1 is-family-monospace">myWallet</h1>
+        <button id="plusButton" class="button is-primary" type="button" style = "position:absolute;  left: 1304px; top:10px;">+</button>
+        <p id="currentTotalText" class="subtitle is-size-3 is-family-monospace">Monthly Income: $0</p>
+        <input id="currentInput" class="input is-focused is-family-monospace" type="text"
+          placeholder="Enter Monthly Income">
+        <progress id="totalBar" class="progress is-medium is-success mt-6 has-background-white" value="0"
+          max="100">0%</progress>
+      </div>
+    </div>
+  </div>
+  <!-- **** -->
+
+
+  <!-- Overall div that the cards are concatenated to -->
+  <div class="order"></div>
+
+
+</body>
+<footer id="footer" class="footer">
+  <div class="content has-text-centered">
+    <p class="has-text-black is-family-monospace mt-6">
+      <strong>Digital Wallet</strong> by Devon, Hoor, Jiya, and Maryam, Aug 2022.
+    </p>
+  </div>
+</footer>
+
+</html>
